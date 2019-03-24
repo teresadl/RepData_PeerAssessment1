@@ -21,7 +21,7 @@ total_steps <- aggregate(steps ~ date, activity_df, FUN = sum)
 hist(total_steps$steps, main = 'Total Steps Taken Each Day', xlab = 'Number of Steps')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](figures/unnamed-chunk-2-1.png)<!-- -->
 
 ```r
 # Calculating mean and median of total number of steps taken per day 
