@@ -50,7 +50,7 @@ plot(meanSteps_timeseries, type = 'l', main = 'Average Daily Activity Pattern',
      xlab = 'Time Interval', ylab = 'Average Steps Taken')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](figures/unnamed-chunk-3-1.png)<!-- -->
 
 ```r
 # 5-min interval, on average, that contains max number of steps
@@ -123,7 +123,7 @@ total_nSteps <- aggregate(steps ~ date, activity_ndf, FUN = sum)
 hist(total_nSteps$steps, main = 'Total Steps Taken Each Day', xlab = 'Number of Steps')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](figures/unnamed-chunk-4-1.png)<!-- -->
 
 ```r
 # Calculating mean and median of total number of steps taken per day 
@@ -195,7 +195,7 @@ xyplot(steps ~ interval | day, group = day, data = mean_nTimeseries, type = 'l',
        layout = c(1,2), xlab = 'Interval', ylab = 'Average Number of Steps')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](figures/unnamed-chunk-5-1.png)<!-- -->
 
 
 
